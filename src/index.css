@@ -1,0 +1,49 @@
+:root {
+  --ivory: #faf5ea;
+  --olive: #3d3826;
+  --olive-soft: #746d55;
+  --accent: #9c7a3f;
+  --accent-soft: rgba(156, 122, 63, 0.16);
+  --line: #e6dac2;
+
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Jost', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--ivory);
+  background-image: url('./assets/bg/paper-grain.svg');
+  background-repeat: repeat;
+  background-size: 260px 260px;
+  color: var(--olive);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,109 @@
+.home-section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 5rem) clamp(1.25rem, 5vw, 2.5rem);
+}
+
+.home-section h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: var(--olive);
+}
+
+.home-section__lede {
+  text-align: center;
+  color: var(--olive-soft);
+  margin: 0 0 2rem;
+}
+
+.home-section--bestsellers .home-section__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.home-section--about {
+  max-width: 680px;
+  text-align: center;
+}
+
+.home-section--about p {
+  color: var(--olive-soft);
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.home-contact__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 720px) {
+  .home-contact__grid {
+    grid-template-columns: 1fr 1.4fr;
+  }
+}
+
+.home-contact__info p {
+  margin: 0 0 1.1rem;
+  color: var(--olive-soft);
+  line-height: 1.5;
+}
+
+.home-contact__info strong {
+  color: var(--olive);
+}
+
+.home-contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.home-contact__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--olive-soft);
+}
+
+.home-contact__form input,
+.home-contact__form textarea {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  padding: 0.6em 0.75em;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--olive);
+  resize: vertical;
+}
+
+.home-contact__form input:focus-visible,
+.home-contact__form textarea:focus-visible,
+.home-contact__form button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.home-contact__form button {
+  align-self: flex-start;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  padding: 0.65em 1.4em;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+.home-contact__sent {
+  color: var(--olive);
+  font-size: 1rem;
+}
